@@ -11,13 +11,21 @@
         <meta property="og:url" content="http://jordaneldredge.com/projects/winamp2-js/" />
         <meta property="og:image" content="http://jordaneldredge.com/projects/winamp2-js/preview.png" />
         <link rel='stylesheet' type='text/css' href='winamp.css' />
+        <link rel='stylesheet' type='text/css' href='context-menu.css' />
         <link rel="shortcut icon" sizes="16x16 32x32" href="favicon.ico">
         <style id='skin' media="screen" type="text/css"></style>
     </head>
     <body>
         <div id='winamp' class='loading stop'>
             <div id='title-bar' class='selected'>
-                <div id='option'></div>
+                <div id='option'>
+                    <ul class='context-menu'>
+                        <li><span class='name'>Winamp2-js...</span></li>
+                        <li><span class='name'>Play</span></li>
+                        <li class='end-group'><span class='name'>Skins</span></li>
+                        <li><span class='name'>Exit</span></li>
+                    </ul>
+                </div>
                 <div id='shade-time'>
                     <div id='shade-minus-sign'></div>
                     <div id='shade-minute-first-digit' class='character'></div>

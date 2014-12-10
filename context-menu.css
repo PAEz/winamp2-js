@@ -1,0 +1,35 @@
+ul.context-menu {
+    z-index: 50; /* Gross */
+    color: black;
+    background-color: #ECECEC;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Tahoma';
+    font-size: 12px;
+    outline: 1px solid #929292;
+    border: 2px solid #F2F2F2;
+    cursor: default;
+}
+
+.context-menu li {
+    white-space: nowrap;
+}
+
+.context-menu li:hover {
+    background-color: blue;
+}
+
+.context-menu .name {
+    margin-left: 22px;
+    box-shadow: -1px 0 0 0 #FBFBFB, -2px 0 0 0 #DFE0E0;
+    padding: 3px 50px 3px 5px;
+    display: block;
+}
+
+.context-menu li.end-group .name {
+    box-shadow: -1px 0 0 0 #FBFBFB, -2px 0 0 0 #DFE0E0, 0 1px 0 0 #DFE0E0, 0 2px 0 0 #FBFBFB;
+    padding-bottom: 5px;
+}
+

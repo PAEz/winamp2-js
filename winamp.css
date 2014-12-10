@@ -95,8 +95,20 @@ body {
     left: 6px;
     /* background-image: TITLEBAR.BMP via Javascript */
 }
-#title-bar #option:active {
+#title-bar #option .context-menu {
+    display: none;
+    top: 10px;
+    left: 3px;
+}
+#title-bar #option:active,
+#title-bar #option.selected
+{
     background-position: 0 -9px;
+}
+#title-bar #option:active .context-menu,
+#title-bar #option.selected .context-menu
+{
+    display: block;
 }
 
 #title-bar #minimize {

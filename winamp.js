@@ -115,7 +115,7 @@ Winamp = {
         });
 
         this.nodes.option.onclick = function() {
-            // We don't support playing from URLs any more
+            this.classList.toggle('selected');
         }
 
         this.nodes.close.onclick = function() {
